@@ -65,16 +65,17 @@ using namespace std;
 int main()
 
 {
-    char name[10];
+    char name[0];
     char rename[20];
 
     cout << "enter ur name\n";
     cin >> name;
-  cout<<"\n";
-    cout << strrev(name);
+    strcpy(rename, name);
+    cout << "\n";
+    cout << strrev(rename);
     cout << "\n";
 
-    if (strcmp(name, rename) == 0)
+    if (strcmp(rename, name) == 0)
     {
         cout<<"yes";
     }
@@ -82,3 +83,5 @@ int main()
         cout<<"no";
     }
 }
+
+ 
